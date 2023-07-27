@@ -70,6 +70,21 @@ Tie
 Tie
 Bert wins with scissors
     */
+
+    /*
+    Step 4 (3 pts). Add a loop to repeat steps 2 and 3 for the number of rounds. Output total wins for each player after all rounds are complete. Submit for grading to confirm all tests pass.
+Ex: If input is:
+
+82 Anna Bert 3
+Sample output is:
+
+Anna vs Bert for 3 rounds
+Anna wins with paper
+Tie
+Anna wins with rock
+Anna wins with paper
+Anna wins 3 and Bert wins 0
+    */
     
     const int ROCK = 0;
     const int PAPER = 1;
