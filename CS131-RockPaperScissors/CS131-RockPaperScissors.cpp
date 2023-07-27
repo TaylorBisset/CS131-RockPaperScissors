@@ -96,35 +96,34 @@ Bert wins with scissors
         {
             cout << "Tie" << endl;
         }
-        else if (player1Choice == ROCK && player2Choice == SCISSORS)
+        else
+        {
+            round++;
+        }
+
+        if (player1Choice == ROCK && player2Choice == SCISSORS)
         {
             cout << player1 << " wins with rock" << endl;
-            round++;
         }
         else if (player1Choice == SCISSORS && player2Choice == PAPER)
         {
             cout << player1 << " wins with scissors" << endl;
-            round++;
         }
         else if (player1Choice == PAPER && player2Choice == ROCK)
         {
             cout << player1 << " wins with paper" << endl;
-            round++;
         }
         else if (player2Choice == ROCK && player1Choice == SCISSORS)
         {
             cout << player2 << " wins with rock" << endl;
-            round++;
         }
         else if (player2Choice == SCISSORS && player1Choice == PAPER)
         {
             cout << player2 << " wins with scissors" << endl;
-            round++;
         }
         else if (player2Choice == PAPER && player1Choice == ROCK)
         {
             cout << player2 << " wins with paper" << endl;
-            round++;
         }
     }
 
