@@ -29,7 +29,8 @@ int main()
     /*
     Step 1 (2 pts). Read two player names from input (string). Read number of rounds from input. 
     Continue reading number of rounds if value is below one and provide an error message. 
-    Output player names and number of rounds. Submit for grading to confirm 2 tests pass.
+    Output player names and number of rounds. 
+    Submit for grading to confirm 2 tests pass.
 Ex: If input is:
 
 3 Anna Bert -3 -4 4
@@ -43,7 +44,8 @@ Anna vs Bert for 4 rounds
     /*
     Step 2 (2 pts). Generate random values (0 - 2) for player 1 followed by player 2 by calling rand() % 3. 
     Continue to generate random values for both players until both values do not match. 
-    Output "Tie" when the values match. Submit for grading to confirm 3 tests pass.
+    Output "Tie" when the values match. 
+    Submit for grading to confirm 3 tests pass.
 Ex: If input is:
 
 10 Anna Bert 1
@@ -52,6 +54,21 @@ Sample output is:
 Anna vs Bert for 1 rounds
 Tie
 Tie
+    */
+
+    /*
+    Step 3 (3 pts). Identify winner for this round and output a message. 
+    Rock crushes scissors, scissors cut paper, and paper covers rock. 
+    Submit for grading to confirm 6 tests pass.
+Ex: If input is:
+
+39 Anna Bert 1
+Sample output is:
+
+Anna vs Bert for 1 rounds
+Tie
+Tie
+Bert wins with scissors
     */
     
     const int ROCK = 0;
