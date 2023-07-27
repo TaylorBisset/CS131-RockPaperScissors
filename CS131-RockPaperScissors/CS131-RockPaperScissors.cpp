@@ -3,7 +3,8 @@
 using namespace std;
 
 /*
-Program Specifications Write a program to play an automated game of Rock, Paper, Scissors. 
+Program Specifications 
+Write a program to play an automated game of Rock, Paper, Scissors. 
 Two players make one of three hand signals at the same time. 
 Hand signals represent a rock, a piece of paper, or a pair of scissors. 
 Each combination results in a win for one of the players. 
@@ -41,9 +42,17 @@ Anna vs Bert for 4 rounds
     const int PAPER = 1;
     const int SCISSORS = 2;
 
-    int seed;
-    cin >> seed;
+    string player1, player2;
+    int seed, numRounds;
+
+    cin >> seed >> player1 >> player2 >> numRounds;
     srand(seed);
+    while (numRounds <= 0)
+    {
+        cout << "Rounds must be > 0" << endl;
+        cin >> numRounds;
+    }
+    cout << player1 << " vs " << player2 << " for " << numRounds << " rounds" << endl;
 
     // End program sequence
     cout << endl << endl;
