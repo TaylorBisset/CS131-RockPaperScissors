@@ -24,6 +24,18 @@ int main()
     A Random object is created and a seed is read from input and passed to the Random object. 
     This supports automated testing and creates predictable results that would otherwise be random.
     */
+
+    /*
+    Step 1 (2 pts). Read two player names from input (string). Read number of rounds from input. Continue reading number of rounds if value is below one and provide an error message. Output player names and number of rounds. Submit for grading to confirm 2 tests pass.
+Ex: If input is:
+
+3 Anna Bert -3 -4 4
+Sample output is:
+
+Rounds must be > 0
+Rounds must be > 0
+Anna vs Bert for 4 rounds
+    */
     
     const int ROCK = 0;
     const int PAPER = 1;
