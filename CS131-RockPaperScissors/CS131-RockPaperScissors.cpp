@@ -72,7 +72,9 @@ Bert wins with scissors
     */
 
     /*
-    Step 4 (3 pts). Add a loop to repeat steps 2 and 3 for the number of rounds. Output total wins for each player after all rounds are complete. Submit for grading to confirm all tests pass.
+    Step 4 (3 pts). Add a loop to repeat steps 2 and 3 for the number of rounds. 
+    Output total wins for each player after all rounds are complete. 
+    Submit for grading to confirm all tests pass.
 Ex: If input is:
 
 82 Anna Bert 3
@@ -92,6 +94,8 @@ Anna wins 3 and Bert wins 0
 
     string player1, player2;
     int seed, numRounds;
+    int player1Wins = 0;
+    int player2Wins = 0;
 
     cin >> seed >> player1 >> player2 >> numRounds;
     srand(seed);
@@ -119,28 +123,36 @@ Anna wins 3 and Bert wins 0
         if (player1Choice == ROCK && player2Choice == SCISSORS)
         {
             cout << player1 << " wins with rock" << endl;
+            player1Wins++;
         }
         else if (player1Choice == SCISSORS && player2Choice == PAPER)
         {
             cout << player1 << " wins with scissors" << endl;
+            player1Wins++;
         }
         else if (player1Choice == PAPER && player2Choice == ROCK)
         {
             cout << player1 << " wins with paper" << endl;
+            player1Wins++;
         }
         else if (player2Choice == ROCK && player1Choice == SCISSORS)
         {
             cout << player2 << " wins with rock" << endl;
+            player2Wins++;
         }
         else if (player2Choice == SCISSORS && player1Choice == PAPER)
         {
             cout << player2 << " wins with scissors" << endl;
+            player2Wins++;
         }
         else if (player2Choice == PAPER && player1Choice == ROCK)
         {
             cout << player2 << " wins with paper" << endl;
+            player2Wins++;
         }
     }
+
+    cout << player1 << " wins " << player1Wins << " and " << player2 << " wins " << player2Wins << endl;
 
     // End program sequence
     cout << endl << endl;
