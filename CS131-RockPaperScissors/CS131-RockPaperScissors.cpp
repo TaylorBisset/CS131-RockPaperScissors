@@ -37,6 +37,18 @@ Rounds must be > 0
 Rounds must be > 0
 Anna vs Bert for 4 rounds
     */
+
+    /*
+    Step 2 (2 pts). Generate random values (0 - 2) for player 1 followed by player 2 by calling rand() % 3. Continue to generate random values for both players until both values do not match. Output "Tie" when the values match. Submit for grading to confirm 3 tests pass.
+Ex: If input is:
+
+10 Anna Bert 1
+Sample output is:
+
+Anna vs Bert for 1 rounds
+Tie
+Tie
+    */
     
     const int ROCK = 0;
     const int PAPER = 1;
